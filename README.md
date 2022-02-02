@@ -5,5 +5,15 @@ A long-standing practice in the treatment of cancer is that of hitting hard with
 
 Articel preprint: https://www.biorxiv.org/content/10.1101/2021.06.01.446525v1
 
+The code ("ProstateCancerGrid.java") is developed using HAL platform(https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007635). It can be used to reproduce the single metastasis results in the above prerpint. To use the code the following steps would work.
 
-https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007635
+1. Install HAL(https://github.com/MathOnco/HAL).
+2. Make a folder "ProstateCancer" in the directory "C:\HAL-master\".
+3. Copy all the files in the directory "C:\HAL-master\ProstateCancer".
+4. Provide one of the csv files as input file in line 192.
+5. Set the output file name and directory in line 223.
+6. Set the parameter values in lines 123-133 and 180-181.
+7. Choose any of the fibroblast strucutres from lines 149-156.
+8. Run "ProstateCancerGrid.java"
+
+For any further query please feel free to contact us.
