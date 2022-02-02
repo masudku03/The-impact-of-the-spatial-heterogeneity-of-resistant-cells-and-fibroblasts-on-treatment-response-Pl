@@ -5,3 +5,5 @@ A long-standing practice in the treatment of cancer is that of hitting hard with
 
 Articel preprint: https://www.biorxiv.org/content/10.1101/2021.06.01.446525v1
 
+
+https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007635
