@@ -27,7 +27,7 @@ class ProstateCancerCell extends AgentSQ2D<ProstateCancerGrid> { //the agents
     }
     public void StepCel(){
         if (this.color ==GREEN){
-            if (G.rng.Double() < (G.divProb + G.dieProb)) {//Check if any event occur (G.divProb*divProbS + G.dieProb)
+            if (G.rng.Double() < (G.divProb + G.dieProb)/(1-G.moveProb)) {//Check if any event occur (G.divProb*divProbS + G.dieProb)
                 if (G.rng.Double() < G.divProb / (G.divProb + G.dieProb)) { //G.divProb*divProbS / (G.divProb*divProbS + G.dieProb)
                     int options = G.MapEmptyHoodK(G.divHood,Xsq(),Ysq());//Checking the available potions in the neighbourhood
                     if (options > 0) {
@@ -46,7 +46,7 @@ class ProstateCancerCell extends AgentSQ2D<ProstateCancerGrid> { //the agents
                 }
             }
         }else {
-            if (G.rng.Double() < (G.divProbR + G.dieProb)) {//Check if any event occur//(G.divProb*divProbR + G.dieProb)
+            if (G.rng.Double() < (G.divProbR + G.dieProb)/(1-G.moveProb)) {//Check if any event occur//(G.divProb*divProbR + G.dieProb)
                 if (G.rng.Double() < G.divProbR / (G.divProbR + G.dieProb)) { //G.divProb*divProbR / (G.divProb*divProbR + G.dieProb)
                     int options = G.MapEmptyHoodK(G.divHood,Xsq(),Ysq());//Checking the available potions in the neighbourhood
                     if (options > 0) {
@@ -68,7 +68,7 @@ class ProstateCancerCell extends AgentSQ2D<ProstateCancerGrid> { //the agents
     }
     public void StepCelFibro(){
           if (this.color ==GREEN){
-            if (G.rng.Double() < (G.divProbFibro + G.dieProb)) {//Check if any event occur (G.divProb*divProbS + G.dieProb)
+            if (G.rng.Double() < (G.divProbFibro + G.dieProb)/(1-G.moveProb)) {//Check if any event occur (G.divProb*divProbS + G.dieProb)
                 if (G.rng.Double() < G.divProbFibro / (G.divProbFibro + G.dieProb)) { //G.divProb*divProbS / (G.divProb*divProbS + G.dieProb)
                     int options = G.MapEmptyHoodK(G.divHood,Xsq(),Ysq());//Checking the available potions in the neighbourhood
                     if (options > 0) {
@@ -87,7 +87,7 @@ class ProstateCancerCell extends AgentSQ2D<ProstateCancerGrid> { //the agents
                 }
             }
         }else {
-            if (G.rng.Double() < (G.divProbRFibro + G.dieProb)) {//Check if any event occur//(G.divProb*divProbR + G.dieProb)
+            if (G.rng.Double() < (G.divProbRFibro + G.dieProb)/(1-G.moveProb)) {//Check if any event occur//(G.divProb*divProbR + G.dieProb)
                 if (G.rng.Double() < G.divProbRFibro / (G.divProbRFibro + G.dieProb)) { //G.divProb*divProbR / (G.divProb*divProbR + G.dieProb)
                     int options = G.MapEmptyHoodK(G.divHood,Xsq(),Ysq());//Checking the available potions in the neighbourhood
                     if (options > 0) {
